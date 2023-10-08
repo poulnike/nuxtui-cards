@@ -1,6 +1,6 @@
 <template>
     <div>
-       текст
+       текст будет чуть длиннее
     </div>
 </template>
 
