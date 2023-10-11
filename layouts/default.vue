@@ -1,11 +1,7 @@
 <template>
     <div class="min-h-screen bg-gray-100">
-
-            <Head/>
-            <NuxtPage />
-            
-            
-
+        <MHead />
+        <NuxtPage />
     </div>
 
 </template>

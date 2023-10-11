@@ -43,8 +43,8 @@
                     </a>
 
                     <template #footer >
-                        <UButton color="primary" variant="solid" >
-                            готово
+                        <UButton @click="signIn" color="primary" variant="solid">
+                            Войти
                         </UButton>
                     </template>
                 </UCard>
@@ -53,7 +53,7 @@
     </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const items = [
   [{
     label: 'Profile',
@@ -62,6 +62,21 @@ const items = [
     }
   }]
 ]
+
+const userStore = useUserStore();
+
+definePageMeta({
+    middleware: ["already-auth"],
+})
+
+const signIn = async ()=> {
+    await userStore.signIn({
+        username: 'kminchelle',
+        password: '0lelplR',
+    })
+
+    await navigateTo("/profile", {replace: true})
+}
 </script>
 
 <style lang="scss" scoped>
