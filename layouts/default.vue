@@ -1,10 +1,16 @@
 <template>
-    <Head />
-    <NuxtPage />
+    <div class="min-h-screen bg-gray-100">
+
+            <Head/>
+            <NuxtPage />
+            
+            
+
+    </div>
+
 </template>
 
 <script setup>
-import Head from '../components/Head/Head.vue';
 
 
 </script>
