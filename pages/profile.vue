@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen">
-    <UButton>Выйти</UButton>
+    <UButton> Выйти</UButton>
   </div>
 </template>
 
@@ -8,13 +8,8 @@
 const userStore = useUserStore();
 
 definePageMeta({
-    middleware: ["auth"],
-})
-
+  middleware: ['auth'],
+});
 </script>
 
-
-
-<style>
-
-</style>
+<style scoped></style>

@@ -1,7 +1,7 @@
-export default defineNuxtRouteMiddleware(async(to, from) => {
-    const userStore = useUserStore();
+export default defineNuxtRouteMiddleware(async (to, from) => {
+  const userStore = useUserStore();
 
-    if (!userStore.user) {
-        return await navigateTo("/")
-    }
-})
+  if (!userStore.user) {
+    return await navigateTo('/');
+  }
+});

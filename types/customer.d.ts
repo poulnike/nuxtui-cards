@@ -1,20 +1,4 @@
-export interface User {
-    id:        number;
-    username:  string;
-    email:     string;
-    firstName: string;
-    lastName:  string;
-    gender:    string;
-    image:     string;
-    token:     string;
-}
-
-export interface Login {
-    username:  string;
-    password:  string;
-}
-
-export interface Customer {
+declare interface Customer {
     id:         number;
     firstName:  string;
     lastName:   string;
@@ -44,7 +28,7 @@ export interface Customer {
     userAgent:  string;
 }
 
-export interface Address {
+declare interface Address {
     address:     string;
     city:        string;
     coordinates: Coordinates;
@@ -52,12 +36,12 @@ export interface Address {
     state:       string;
 }
 
-export interface Coordinates {
+declare interface Coordinates {
     lat: number;
     lng: number;
 }
 
-export interface Bank {
+declare interface Bank {
     cardExpire: string;
     cardNumber: string;
     cardType:   string;
@@ -65,14 +49,14 @@ export interface Bank {
     iban:       string;
 }
 
-export interface Company {
+declare interface Company {
     address:    Address;
     department: string;
     name:       string;
     title:      string;
 }
 
-export interface Hair {
+declare interface Hair {
     color: string;
     type:  string;
 }

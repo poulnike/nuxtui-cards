@@ -1,16 +1,10 @@
 <template>
-    <div class="min-h-screen bg-gray-100">
-        <MHead />
-        <NuxtPage />
-    </div>
-
+  <div class="min-h-screen bg-gray-100">
+    <MHead />
+    <NuxtPage />
+  </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
